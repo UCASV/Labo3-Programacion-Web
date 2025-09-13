@@ -1,0 +1,64 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --pink: #e12afb;
+}
+
+/* .box {
+display: flex;
+background-color: var(--pink);
+}
+
+.box div {
+margin: 10px 5px;
+border-radius: 8px;
+padding: 5px;
+background-color: var(--blue);
+} */
+
+/* Cambia la direccion: Se haran apilaran uno a otro */
+/* .box {
+display: flex;
+background-color: var(--pink);
+flex-direction: column;
+} */
+
+/* Elementos se expanden para ocupar mas espacion en el contenedor (flex-grow) */
+.box {
+  display: flex;
+  background-color: var(--pink);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box div {
+  flex-grow: 4;
+  margin: 10px 5px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: var(--blue);
+}
+
+.box div:first-child {
+  flex-grow: 12;
+}
+
+/* Controla los anchos del flex-grow */
+.box {
+display: flex;
+background-color: var(--pink);
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.box div {
+margin: 10px 5px;
+border-radius: 8px;
+padding: 5px;
+background-color: var(--blue);
+width: 33%;
+}
+
+.box div:first-child {
+width: 64%;
+}

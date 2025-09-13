@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #d2d0d0;
+}
+
+.component-card {
+    background-color: #ffffff;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.card-image {
+    width: 100px;
+    height: auto;
+}
+
+.card-content h3 {
+    color: #423f3f;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.pay-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+    background-color: #607fa1;
+    cursor: pointer;
+}
+
+/* Animación para que el componente aparezca */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
